@@ -36,7 +36,7 @@ module.exports = function(grunt) {
 
 		sass: {
 			core: {
-				src: 'css/reveal.scss',
+				src: 'css/*.scss',
 				dest: 'css/reveal.css'
 			},
 			themes: {
@@ -119,7 +119,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-				files: [ 'Gruntfile.js', 'js/reveal.js' ],
+				files: [ 'Gruntfile.js', 'js/reveal.js' , 'js/main.js'],
 				tasks: 'js'
 			},
 			theme: {
@@ -132,7 +132,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/styles.css' ],
 				tasks: 'css-core'
 			},
 			html: {
